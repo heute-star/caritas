@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": 1,
+    "nombre": "Disfraz de Duende de Navidad Verde con Gorro",
+    "categoria": "navidad",
+    "edad": "nino",
+    "genero": "unisex",
+    "imagen": "images/disfraces/duende-navidad.jpg",
+    "imagen_thumb": "images/disfraces/duende-navidad.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Disfraz de Minion Amarillo y Azul",
+    "categoria": "infantiles",
+    "edad": "nino",
+    "genero": "unisex",
+    "imagen": "images/disfraces/minion.jpg",
+    "imagen_thumb": "images/disfraces/minion.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Disfraz de Mr Increíble Rojo Los Increíbles",
+    "categoria": "superheroes",
+    "edad": "adulto",
+    "genero": "hombre",
+    "imagen": "images/disfraces/mr-increible.jpg",
+    "imagen_thumb": "images/disfraces/mr-increible.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Disfraz de Mujer Maravilla Wonder Woman",
+    "categoria": "superheroes",
+    "edad": "adulto",
+    "genero": "mujer",
+    "imagen": "images/disfraces/mujer-maravilla.jpg",
+    "imagen_thumb": "images/disfraces/mujer-maravilla.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Disfraz de Papá Noel Santa Claus Navideño",
+    "categoria": "navidad",
+    "edad": "adulto",
+    "genero": "hombre",
+    "imagen": "images/disfraces/papa-noel.jpg",
+    "imagen_thumb": "images/disfraces/papa-noel.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Disfraz de Pastor de Belén Navidad",
+    "categoria": "navidad",
+    "edad": "adulto",
+    "genero": "hombre",
+    "imagen": "images/disfraces/pastor-belen.jpg",
+    "imagen_thumb": "images/disfraces/pastor-belen.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Disfraz de Pirata del Caribe Mujer",
+    "categoria": "infantiles",
+    "edad": "nino",
+    "genero": "nina",
+    "imagen": "images/disfraces/pirata-caribe.jpg",
+    "imagen_thumb": "images/disfraces/pirata-caribe.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Disfraz de Princesa Elsa de Frozen Azul",
+    "categoria": "princesas",
+    "edad": "nino",
+    "genero": "nina",
+    "imagen": "images/disfraces/princesa-elsa.jpg",
+    "imagen_thumb": "images/disfraces/princesa-elsa.jpg"
+  }
+]
