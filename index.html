@@ -17,7 +17,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="images/logo-caritas-alegres.svg" alt="Caritas Alegres Logo" class="logo-img">
+                    <div class="logo-placeholder">CA</div>
                     <div class="logo-text">
                         <h1>Caritas Alegres</h1>
                         <p class="tagline">¡Disfrazá!</p>
@@ -61,7 +61,14 @@
         </a>
     </div>
 
-    <!-- Hero Section - Galería Promocional -->
+    <!-- Modal de Imagen -->
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-image" alt="">
+        <div id="modal-caption"></div>
+    </div>
+
+    <!-- Galería Promocional -->
     <section id="galeria-promocional" class="hero-gallery">
         <div class="container">
             <h2 class="gallery-title">Temporadas Especiales</h2>
@@ -70,7 +77,7 @@
                     <div class="promo-image halloween">
                         <div class="promo-overlay">
                             <h3>Halloween</h3>
-                            <p>Octubre - Los disfraces más terroríficos</p>
+                            <p>Octubre - Disfraces terroríficos</p>
                         </div>
                     </div>
                 </div>
@@ -182,7 +189,7 @@
 
             <!-- Costumes Grid -->
             <div id="costumes-grid" class="costumes-grid">
-                <!-- Los disfraces se cargarán dinámicamente aquí -->
+                <!-- Disfraces se cargan dinámicamente -->
             </div>
 
             <!-- No Results Message -->
@@ -213,13 +220,13 @@
                             </svg>
                         </div>
                         <h3>Dirección</h3>
-                        <p>42PM+JVR, Antonio Ricaurte, S/N<br>Ricaurte, 010205<br>Cuenca, Ecuador</p>
-                        <a href="https://maps.google.com/?q=42PM+JVR,Antonio+Ricaurte,Ricaurte,010205,Cuenca,Ecuador" target="_blank" class="btn btn-primary">Ver en Google Maps</a>
+                        <p>Ricaurte, Cuenca<br>Ecuador</p>
+                        <a href="https://maps.app.goo.gl/4HmJs9oj8TtmzxZcA" target="_blank" class="btn btn-primary">Ver en Google Maps</a>
                     </div>
                 </div>
                 <div class="location-map">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.3856817654298!2d-79.01483793042071!3d-2.8660838998422814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwNTEnNTcuOSJTIDc5wrAwMCc1My40Ilc!5e0!3m2!1ses!2sec!4v1234567890123!5m2!1ses!2sec" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.34652056382195!2d-79.01497927713653!3d-2.8660710772556936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd191bc5336fd7%3A0xfb1a06e5b9e87e70!2sCaritas%20Alegres!5e0!3m2!1sen!2sec!4v1714777200000!5m2!1sen!2sec" 
                         width="100%" 
                         height="400" 
                         style="border:0;" 
@@ -266,9 +273,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <img src="images/logo-caritas-alegres.svg" alt="Caritas Alegres" class="footer-logo">
+                    <div class="footer-logo-placeholder">CA</div>
                     <h3>Caritas Alegres</h3>
-                    <p>Tu tienda de confianza para disfraces en Cuenca desde hace años.</p>
+                    <p>Tu tienda de confianza para disfraces en Cuenca.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Enlaces</h4>
