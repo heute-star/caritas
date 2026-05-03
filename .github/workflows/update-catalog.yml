@@ -1,0 +1,72 @@
+name: Actualizar Catálogo desde Excel
+
+on:
+  push:
+    paths:
+      - 'inventario-disfraces.xlsx'
+  workflow_dispatch:
+
+jobs:
+  update-catalog:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          pip install openpyxl
+          
+      - name: Convert Excel to JSON
+        run: |
+          python << 'EOF'
+          import openpyxl
+          import json
+          
+          # Leer Excel
+          wb = openpyxl.load_workbook('inventario-disfraces.xlsx')
+          ws = wb['Inventario Disfraces']
+          
+          disfraces = []
+          
+          # Saltar header (fila 1)
+          for row in ws.iter_rows(min_row=2, values_only=True):
+              if row[0] is None:  # Si no hay ID, saltar fila vacía
+                  continue
+                  
+              disfraz = {
+                  "id": int(row[0]),
+                  "nombre": str(row[2]),  # Nombre completo descriptivo
+                  "categoria": str(row[3]).lower(),
+                  "edad": str(row[4]).lower(),
+                  "genero": str(row[5]).lower() if row[5] else "unisex",
+                  "imagen": f"images/disfraces/{row[1]}",
+                  "imagen_thumb": f"images/disfraces/{row[1]}"
+              }
+              disfraces.append(disfraz)
+          
+          # Guardar JSON
+          with open('data/disfraces.json', 'w', encoding='utf-8') as f:
+              json.dump(disfraces, f, ensure_ascii=False, indent=2)
+          
+          print(f"✅ Convertidos {len(disfraces)} disfraces a JSON")
+          EOF
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/disfraces.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 Actualizar catálogo desde Excel"
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
