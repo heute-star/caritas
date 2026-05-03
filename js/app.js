@@ -1,21 +1,21 @@
 // ===================================
-// Main Application Logic - Caritas Alegres V2
+// Main Application Logic - Caritas Alegres
 // ===================================
 
 /**
- * Renderiza una tarjeta de disfraz (SIN PRECIOS)
+ * Renderiza una tarjeta de disfraz SIMPLE
+ * Solo: Imagen (clickeable) + Badge Categoría + Edad + Nombre
  */
 function createCostumeCard(costume) {
     const card = document.createElement('div');
     card.className = 'costume-card';
     card.setAttribute('data-id', costume.id);
     
-    // Imagen con fallback
     const imageSrc = costume.imagen || 'images/placeholder.svg';
     const imageThumb = costume.imagen_thumb || imageSrc;
     
     card.innerHTML = `
-        <div class="costume-image">
+        <div class="costume-image" onclick="openImageModal('${imageSrc}', '${costume.nombre}')">
             <img 
                 src="${imageThumb}" 
                 alt="${costume.nombre}"
@@ -27,17 +27,35 @@ function createCostumeCard(costume) {
             </span>
         </div>
         <div class="costume-info">
-            <div class="costume-category">${getAgeName(costume.edad)}</div>
+            <div class="costume-age">${getAgeName(costume.edad)}</div>
             <h3 class="costume-name">${costume.nombre}</h3>
-            <p class="costume-description">${costume.descripcion}</p>
-            
-            <div class="costume-sizes">
-                ${costume.tallas.map(talla => `<span class="size-badge">${talla}</span>`).join('')}
-            </div>
         </div>
     `;
     
     return card;
+}
+
+/**
+ * Abre modal con imagen grande
+ */
+function openImageModal(imageSrc, costumeName) {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
+    
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+    modalCaption.textContent = costumeName;
+    document.body.style.overflow = 'hidden';
+}
+
+/**
+ * Cierra modal de imagen
+ */
+function closeImageModal() {
+    const modal = document.getElementById('image-modal');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
 }
 
 /**
@@ -49,15 +67,12 @@ function renderCostumes() {
     
     if (!costumesGrid) return;
     
-    // Ocultar loading
     if (loading) {
         loading.style.display = 'none';
     }
     
-    // Limpiar grid
     costumesGrid.innerHTML = '';
     
-    // Verificar si hay resultados
     if (filteredCostumes.length === 0) {
         toggleNoResults(true);
         updateResultsCount(0);
@@ -66,10 +81,8 @@ function renderCostumes() {
     
     toggleNoResults(false);
     
-    // Ordenar disfraces por nombre
     const sorted = sortCostumes(filteredCostumes, 'nombre');
     
-    // Crear y agregar tarjetas
     const fragment = document.createDocumentFragment();
     sorted.forEach(costume => {
         const card = createCostumeCard(costume);
@@ -77,11 +90,8 @@ function renderCostumes() {
     });
     
     costumesGrid.appendChild(fragment);
-    
-    // Actualizar contador
     updateResultsCount(filteredCostumes.length);
     
-    // Lazy loading de imágenes
     if ('IntersectionObserver' in window) {
         lazyLoadImages();
     }
@@ -121,7 +131,6 @@ function initializeMobileMenu() {
             document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
         });
         
-        // Cerrar menú al hacer click en un enlace
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
@@ -130,7 +139,6 @@ function initializeMobileMenu() {
             });
         });
         
-        // Cerrar menú al hacer click fuera
         document.addEventListener('click', (e) => {
             if (nav.classList.contains('active') && 
                 !nav.contains(e.target) && 
@@ -144,7 +152,7 @@ function initializeMobileMenu() {
 }
 
 /**
- * Inicializa smooth scroll para los enlaces internos
+ * Inicializa smooth scroll
  */
 function initializeSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
@@ -153,7 +161,6 @@ function initializeSmoothScroll() {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             
-            // Ignorar enlaces vacíos o solo con #
             if (href === '#' || href === '') {
                 e.preventDefault();
                 return;
@@ -176,7 +183,7 @@ function initializeSmoothScroll() {
 }
 
 /**
- * Maneja errores globales de carga de imágenes
+ * Maneja errores de imágenes
  */
 function handleImageErrors() {
     document.addEventListener('error', (e) => {
@@ -187,35 +194,58 @@ function handleImageErrors() {
 }
 
 /**
+ * Inicializa modal listeners
+ */
+function initializeModal() {
+    const modal = document.getElementById('image-modal');
+    const closeBtn = document.querySelector('.modal-close');
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeImageModal);
+    }
+    
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeImageModal();
+            }
+        });
+    }
+    
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            closeImageModal();
+        }
+    });
+}
+
+/**
  * Inicializa la aplicación
  */
 async function initializeApp() {
     console.log('Inicializando Caritas Alegres...');
     
-    // Cargar datos
     await loadCostumesData();
     
-    // Inicializar componentes
     initializeFilters();
     initializeMobileMenu();
     initializeSmoothScroll();
     handleImageErrors();
+    initializeModal();
     
-    // Renderizar disfraces iniciales
     filterCostumes();
     renderCostumes();
     
     console.log('Aplicación inicializada correctamente');
 }
 
-/**
- * Evento de carga del DOM
- */
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeApp);
 } else {
     initializeApp();
 }
 
-// Exportar funciones globales para uso en HTML
 window.clearFilters = clearFilters;
+window.openImageModal = openImageModal;
+window.closeImageModal = closeImageModal;
