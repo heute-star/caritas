@@ -1,5 +1,5 @@
 // ===================================
-// Filters and Search Logic
+// Filters and Search Logic - Caritas Alegres V2
 // ===================================
 
 /**
@@ -8,8 +8,7 @@
 function filterCostumes() {
     const searchTerm = document.getElementById('search').value.toLowerCase().trim();
     const category = document.getElementById('category-filter').value;
-    const season = document.getElementById('season-filter').value;
-    const availability = document.getElementById('availability-filter').value;
+    const age = document.getElementById('age-filter').value;
 
     filteredCostumes = costumesData.filter(costume => {
         // Filtro de búsqueda por nombre y descripción
@@ -20,16 +19,10 @@ function filterCostumes() {
         // Filtro de categoría
         const matchesCategory = category === 'todas' || costume.categoria === category;
 
-        // Filtro de temporada
-        const matchesSeason = season === 'todas' || costume.temporada === season;
+        // Filtro de edad
+        const matchesAge = age === 'todas' || costume.edad === age;
 
-        // Filtro de disponibilidad
-        const matchesAvailability = 
-            availability === 'todos' ||
-            (availability === 'disponible' && costume.disponible) ||
-            (availability === 'no-disponible' && !costume.disponible);
-
-        return matchesSearch && matchesCategory && matchesSeason && matchesAvailability;
+        return matchesSearch && matchesCategory && matchesAge;
     });
 
     return filteredCostumes;
@@ -41,8 +34,7 @@ function filterCostumes() {
 function clearFilters() {
     document.getElementById('search').value = '';
     document.getElementById('category-filter').value = 'todas';
-    document.getElementById('season-filter').value = 'todas';
-    document.getElementById('availability-filter').value = 'todos';
+    document.getElementById('age-filter').value = 'todas';
     
     filterCostumes();
     renderCostumes();
@@ -58,14 +50,8 @@ function sortCostumes(costumes, sortBy = 'nombre') {
         case 'nombre':
             sorted.sort((a, b) => a.nombre.localeCompare(b.nombre));
             break;
-        case 'precio-alquiler-asc':
-            sorted.sort((a, b) => parseFloat(a.precio_alquiler) - parseFloat(b.precio_alquiler));
-            break;
-        case 'precio-alquiler-desc':
-            sorted.sort((a, b) => parseFloat(b.precio_alquiler) - parseFloat(a.precio_alquiler));
-            break;
-        case 'disponibilidad':
-            sorted.sort((a, b) => (b.disponible ? 1 : 0) - (a.disponible ? 1 : 0));
+        case 'categoria':
+            sorted.sort((a, b) => a.categoria.localeCompare(b.categoria));
             break;
         default:
             break;
@@ -126,8 +112,7 @@ const handleSearch = debounce(() => {
 function initializeFilters() {
     const searchInput = document.getElementById('search');
     const categoryFilter = document.getElementById('category-filter');
-    const seasonFilter = document.getElementById('season-filter');
-    const availabilityFilter = document.getElementById('availability-filter');
+    const ageFilter = document.getElementById('age-filter');
     const clearFiltersBtn = document.getElementById('clear-filters');
 
     if (searchInput) {
@@ -141,15 +126,8 @@ function initializeFilters() {
         });
     }
 
-    if (seasonFilter) {
-        seasonFilter.addEventListener('change', () => {
-            filterCostumes();
-            renderCostumes();
-        });
-    }
-
-    if (availabilityFilter) {
-        availabilityFilter.addEventListener('change', () => {
+    if (ageFilter) {
+        ageFilter.addEventListener('change', () => {
             filterCostumes();
             renderCostumes();
         });

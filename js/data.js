@@ -1,5 +1,5 @@
 // ===================================
-// Data Management
+// Data Management - Caritas Alegres V2
 // ===================================
 
 let costumesData = [];
@@ -60,18 +60,19 @@ function getUniqueCategories() {
 }
 
 /**
- * Obtiene temporadas únicas
+ * Obtiene edades únicas
  */
-function getUniqueSeasons() {
-    return [...new Set(costumesData.map(costume => costume.temporada))];
+function getUniqueAges() {
+    return [...new Set(costumesData.map(costume => costume.edad))];
 }
 
 /**
- * Traduce nombres de categorías y temporadas al español legible
+ * Traduce nombres de categorías y edades al español legible
  */
 const translations = {
     categories: {
         'halloween': 'Halloween',
+        'navidad': 'Navidad',
         'carnaval': 'Carnaval',
         'superheroes': 'Superhéroes',
         'princesas': 'Princesas',
@@ -80,12 +81,9 @@ const translations = {
         'epoca': 'Época',
         'infantiles': 'Infantiles'
     },
-    seasons: {
-        'primavera': 'Primavera',
-        'verano': 'Verano',
-        'otono': 'Otoño',
-        'invierno': 'Invierno',
-        'todo-el-ano': 'Todo el año'
+    ages: {
+        'nino': 'Niños',
+        'adulto': 'Adultos'
     }
 };
 
@@ -97,8 +95,8 @@ function getCategoryName(category) {
 }
 
 /**
- * Obtiene la traducción de una temporada
+ * Obtiene la traducción de una edad
  */
-function getSeasonName(season) {
-    return translations.seasons[season] || season;
+function getAgeName(age) {
+    return translations.ages[age] || age;
 }

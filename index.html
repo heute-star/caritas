@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Caritas Alegres - Alquiler, confección y venta de disfraces para todas las ocasiones. Encuentra el disfraz perfecto para Halloween, Carnaval y más.">
-    <meta name="keywords" content="disfraces, alquiler disfraces, venta disfraces, halloween, carnaval, disfraces infantiles">
-    <meta name="author" content="Caritas Alegres">
+    <meta name="description" content="Caritas Alegres - Alquiler, confección y venta de disfraces. Ricaurte, Cuenca, Ecuador.">
+    <meta name="keywords" content="disfraces, alquiler disfraces, Cuenca, Ecuador, halloween, carnaval, navidad">
     
-    <title>Caritas Alegres - Catálogo de Disfraces</title>
+    <title>Caritas Alegres - Disfraces en Cuenca</title>
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -18,15 +17,19 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>Caritas Alegres</h1>
-                    <p class="tagline">¡Disfrazá!</p>
+                    <img src="images/logo-caritas-alegres.svg" alt="Caritas Alegres Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Caritas Alegres</h1>
+                        <p class="tagline">¡Disfrazá!</p>
+                    </div>
                 </div>
                 
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#galeria-promocional">Promociones</a></li>
                         <li><a href="#catalogo">Catálogo</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#ubicacion">Dónde Estamos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
@@ -40,19 +43,59 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
+    <!-- Botones Flotantes -->
+    <div class="floating-buttons">
+        <a href="tel:+593728900291" class="floating-btn btn-call" aria-label="Llamar ahora">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" fill="currentColor"/>
+            </svg>
+            <span>Llamar</span>
+        </a>
+        <a href="#catalogo" class="floating-btn btn-catalog">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="2"/>
+                <line x1="9" y1="21" x2="9" y2="9" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Catálogo</span>
+        </a>
+    </div>
+
+    <!-- Hero Section - Galería Promocional -->
+    <section id="galeria-promocional" class="hero-gallery">
         <div class="container">
-            <div class="hero-content">
-                <h2>Encuentra tu Disfraz Perfecto</h2>
-                <p>Alquiler, confección y venta de disfraces para todas las ocasiones</p>
-                <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+            <h2 class="gallery-title">Temporadas Especiales</h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <div class="promo-image halloween">
+                        <div class="promo-overlay">
+                            <h3>Halloween</h3>
+                            <p>Octubre - Los disfraces más terroríficos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-image carnaval">
+                        <div class="promo-overlay">
+                            <h3>Carnaval</h3>
+                            <p>Febrero - Color y diversión</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-image navidad">
+                        <div class="promo-overlay">
+                            <h3>Navidad</h3>
+                            <p>Diciembre - Magia navideña</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="servicios" class="services">
+    <section id="inicio" class="services">
         <div class="container">
             <h2 class="section-title">Nuestros Servicios</h2>
             <div class="services-grid">
@@ -65,7 +108,7 @@
                         </svg>
                     </div>
                     <h3>Alquiler</h3>
-                    <p>Amplio catálogo de disfraces disponibles para alquilar por día o fin de semana.</p>
+                    <p>Amplio catálogo de disfraces disponibles para todas las ocasiones.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -86,7 +129,7 @@
                         </svg>
                     </div>
                     <h3>Venta</h3>
-                    <p>Compra tu disfraz favorito y tenlo para siempre en tu colección.</p>
+                    <p>Compra tu disfraz favorito y tenlo para siempre.</p>
                 </div>
             </div>
         </div>
@@ -101,7 +144,7 @@
             <div class="filters">
                 <div class="filter-group">
                     <label for="search">Buscar:</label>
-                    <input type="text" id="search" placeholder="Nombre del disfraz...">
+                    <input type="text" id="search" placeholder="Buscar disfraz...">
                 </div>
                 
                 <div class="filter-group">
@@ -109,6 +152,7 @@
                     <select id="category-filter">
                         <option value="todas">Todas las categorías</option>
                         <option value="halloween">Halloween</option>
+                        <option value="navidad">Navidad</option>
                         <option value="carnaval">Carnaval</option>
                         <option value="superheroes">Superhéroes</option>
                         <option value="princesas">Princesas</option>
@@ -120,23 +164,11 @@
                 </div>
                 
                 <div class="filter-group">
-                    <label for="season-filter">Temporada:</label>
-                    <select id="season-filter">
-                        <option value="todas">Todas las temporadas</option>
-                        <option value="primavera">Primavera</option>
-                        <option value="verano">Verano</option>
-                        <option value="otono">Otoño</option>
-                        <option value="invierno">Invierno</option>
-                        <option value="todo-el-ano">Todo el año</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <label for="availability-filter">Disponibilidad:</label>
-                    <select id="availability-filter">
-                        <option value="todos">Todos</option>
-                        <option value="disponible">Disponibles</option>
-                        <option value="no-disponible">No disponibles</option>
+                    <label for="age-filter">Edad:</label>
+                    <select id="age-filter">
+                        <option value="todas">Todas las edades</option>
+                        <option value="nino">Niños</option>
+                        <option value="adulto">Adultos</option>
                     </select>
                 </div>
                 
@@ -167,6 +199,39 @@
         </div>
     </section>
 
+    <!-- Location Section -->
+    <section id="ubicacion" class="location">
+        <div class="container">
+            <h2 class="section-title">Dónde Estamos</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" stroke="#7B7AB8" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="#7B7AB8" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Dirección</h3>
+                        <p>42PM+JVR, Antonio Ricaurte, S/N<br>Ricaurte, 010205<br>Cuenca, Ecuador</p>
+                        <a href="https://maps.google.com/?q=42PM+JVR,Antonio+Ricaurte,Ricaurte,010205,Cuenca,Ecuador" target="_blank" class="btn btn-primary">Ver en Google Maps</a>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.3856817654298!2d-79.01483793042071!3d-2.8660838998422814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwNTEnNTcuOSJTIDc5wrAwMCc1My40Ilc!5e0!3m2!1ses!2sec!4v1234567890123!5m2!1ses!2sec" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contacto" class="contact">
         <div class="container">
@@ -174,24 +239,23 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
+                        <div class="contact-icon">📞</div>
                         <h3>Teléfono</h3>
-                        <p><a href="tel:2890291">2890 291</a></p>
+                        <p><a href="tel:+593728900291">+593 7-289-0291</a></p>
                     </div>
                     <div class="contact-item">
-                        <h3>Ubicación</h3>
-                        <p>[Dirección de la tienda]</p>
-                    </div>
-                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
                         <h3>Horario</h3>
-                        <p>Lunes a Viernes: 9:00 - 19:00</p>
+                        <p>Lunes a Viernes: 9:00 - 18:00</p>
                         <p>Sábados: 9:00 - 14:00</p>
+                        <p>Domingos: Cerrado</p>
                     </div>
                 </div>
                 
                 <div class="contact-cta">
                     <h3>¿Cómo Reservar?</h3>
-                    <p>Contactanos por teléfono o visita nuestra tienda para ver los disfraces en persona y realizar tu reserva.</p>
-                    <a href="tel:2890291" class="btn btn-primary">Llamar Ahora</a>
+                    <p>Llámanos o visita nuestra tienda en Ricaurte para ver los disfraces en persona y realizar tu reserva.</p>
+                    <a href="tel:+593728900291" class="btn btn-primary">Llamar Ahora</a>
                 </div>
             </div>
         </div>
@@ -202,21 +266,23 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
+                    <img src="images/logo-caritas-alegres.svg" alt="Caritas Alegres" class="footer-logo">
                     <h3>Caritas Alegres</h3>
-                    <p>Tu tienda de confianza para disfraces desde hace años.</p>
+                    <p>Tu tienda de confianza para disfraces en Cuenca desde hace años.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Enlaces</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#galeria-promocional">Promociones</a></li>
                         <li><a href="#catalogo">Catálogo</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#ubicacion">Dónde Estamos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Caritas Alegres. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Caritas Alegres - Ricaurte, Cuenca, Ecuador</p>
             </div>
         </div>
     </footer>

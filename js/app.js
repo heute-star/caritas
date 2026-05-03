@@ -1,9 +1,9 @@
 // ===================================
-// Main Application Logic
+// Main Application Logic - Caritas Alegres V2
 // ===================================
 
 /**
- * Renderiza una tarjeta de disfraz
+ * Renderiza una tarjeta de disfraz (SIN PRECIOS)
  */
 function createCostumeCard(costume) {
     const card = document.createElement('div');
@@ -11,7 +11,7 @@ function createCostumeCard(costume) {
     card.setAttribute('data-id', costume.id);
     
     // Imagen con fallback
-    const imageSrc = costume.imagen || 'images/placeholder.jpg';
+    const imageSrc = costume.imagen || 'images/placeholder.svg';
     const imageThumb = costume.imagen_thumb || imageSrc;
     
     card.innerHTML = `
@@ -20,37 +20,19 @@ function createCostumeCard(costume) {
                 src="${imageThumb}" 
                 alt="${costume.nombre}"
                 loading="lazy"
-                onerror="this.src='images/placeholder.jpg'"
+                onerror="this.src='images/placeholder.svg'"
             >
-            <span class="costume-badge ${!costume.disponible ? 'not-available' : ''}">
-                ${costume.disponible ? 'Disponible' : 'No disponible'}
+            <span class="costume-badge">
+                ${getCategoryName(costume.categoria)}
             </span>
         </div>
         <div class="costume-info">
-            <div class="costume-category">${getCategoryName(costume.categoria)}</div>
+            <div class="costume-category">${getAgeName(costume.edad)}</div>
             <h3 class="costume-name">${costume.nombre}</h3>
             <p class="costume-description">${costume.descripcion}</p>
             
-            <div class="costume-details">
-                <div class="costume-detail">
-                    <span>Temporada:</span>
-                    <span>${getSeasonName(costume.temporada)}</span>
-                </div>
-            </div>
-            
             <div class="costume-sizes">
                 ${costume.tallas.map(talla => `<span class="size-badge">${talla}</span>`).join('')}
-            </div>
-            
-            <div class="costume-prices">
-                <div class="price-item">
-                    <span class="price-label">Alquiler</span>
-                    <span class="price-value">$${costume.precio_alquiler}</span>
-                </div>
-                <div class="price-item">
-                    <span class="price-label">Venta</span>
-                    <span class="price-value">$${costume.precio_venta}</span>
-                </div>
             </div>
         </div>
     `;
@@ -84,8 +66,8 @@ function renderCostumes() {
     
     toggleNoResults(false);
     
-    // Ordenar disfraces (disponibles primero)
-    const sorted = sortCostumes(filteredCostumes, 'disponibilidad');
+    // Ordenar disfraces por nombre
+    const sorted = sortCostumes(filteredCostumes, 'nombre');
     
     // Crear y agregar tarjetas
     const fragment = document.createDocumentFragment();
@@ -194,23 +176,12 @@ function initializeSmoothScroll() {
 }
 
 /**
- * Crea un placeholder para imágenes que no cargan
- */
-function createPlaceholderImage() {
-    // Crear imagen SVG placeholder si no existe
-    const placeholderDir = 'images';
-    
-    // Esta función puede expandirse para generar placeholders dinámicos
-    // Por ahora, las imágenes que fallen mostrarán el placeholder.jpg
-}
-
-/**
  * Maneja errores globales de carga de imágenes
  */
 function handleImageErrors() {
     document.addEventListener('error', (e) => {
         if (e.target.tagName === 'IMG') {
-            e.target.src = 'images/placeholder.jpg';
+            e.target.src = 'images/placeholder.svg';
         }
     }, true);
 }

@@ -1,17 +1,30 @@
 # Caritas Alegres - Catálogo de Disfraces
 
-Sitio web oficial de **Caritas Alegres**, tu tienda de confianza para alquiler, confección y venta de disfraces.
+Sitio web oficial de **Caritas Alegres**, tu tienda de confianza para alquiler, confección y venta de disfraces en Ricaurte, Cuenca, Ecuador.
 
 ## 📋 Descripción
 
-Catálogo digital responsive con galería filtrable de disfraces para todas las ocasiones. Diseñado para ofrecer una experiencia óptima tanto en dispositivos móviles como en escritorio.
+Catálogo digital responsive y divertido con galería filtrable de disfraces para todas las ocasiones. Diseñado especialmente para ofrecer una experiencia alegre y fácil tanto en dispositivos móviles como en escritorio.
+
+## 🎨 Nuevo en la Versión 2
+
+- ✨ Logo de carita alegre personalizado
+- 🎪 Galería promocional con 3 temporadas destacadas (Halloween, Carnaval, Navidad)
+- 📞 Botones flotantes para llamar y ver catálogo
+- 🗺️ Mapa de Google Maps integrado con la ubicación exacta
+- 🎭 Diseño más divertido y colorido
+- 🎅 Categoría de Navidad agregada
+- 👶 Filtro por edad (Niños / Adultos)
+- 🚫 Sin mostrar precios (solo información de disfraces)
+- 🗂️ Filtros simplificados (categoría y edad solamente)
 
 ## 🚀 Características
 
-- **Galería filtrable** por categorías y temporadas
+- **Galería filtrable** por categoría y edad
 - **Búsqueda en tiempo real** de disfraces
 - **Diseño responsive** optimizado para móviles
-- **Carga optimizada** con lazy loading de imágenes
+- **Botones flotantes** para acción rápida
+- **Mapa integrado** para encontrar la tienda fácilmente
 - **Sin dependencias externas** - HTML/CSS/JS puro
 - **Fácil mantenimiento** - datos en JSON
 
@@ -28,14 +41,11 @@ tienda-disfraces/
 │   ├── filters.js          # Sistema de filtros
 │   └── data.js             # Carga de datos
 ├── data/
-│   └── disfraces.json      # Catálogo de disfraces
+│   └── disfraces.json      # Catálogo de disfraces (20 ejemplos)
 ├── images/
+│   ├── logo-caritas-alegres.svg    # Logo oficial
 │   ├── disfraces/          # Fotos de disfraces
-│   │   ├── halloween/
-│   │   ├── carnaval/
-│   │   ├── infantiles/
-│   │   └── adultos/
-│   └── logo/               # Logo y branding
+│   └── placeholder.svg     # Imagen por defecto
 ├── docs/
 │   ├── COMO_AGREGAR_DISFRAZ.md
 │   └── OPTIMIZAR_IMAGENES.md
@@ -44,94 +54,56 @@ tienda-disfraces/
 
 ## 🛠️ Instalación y Uso
 
-### Opción 1: Uso Local
+### GitHub Pages (Gratis)
 
-1. Clona el repositorio:
-```bash
-git clone https://github.com/TU_USUARIO/tienda-disfraces.git
-cd tienda-disfraces
-```
-
-2. Abre `index.html` en tu navegador preferido
-
-### Opción 2: GitHub Pages
-
-1. Ve a Settings → Pages
-2. En "Source" selecciona la rama `main`
-3. Guarda y espera 1-2 minutos
-4. Tu sitio estará disponible en: `https://TU_USUARIO.github.io/tienda-disfraces`
+1. Sube los archivos a tu repositorio de GitHub
+2. Ve a Settings → Pages
+3. En "Source" selecciona la rama `main`
+4. ¡Listo! Tu sitio estará en: `https://TU_USUARIO.github.io/TU_REPO`
 
 ## ✏️ Cómo Agregar un Disfraz
 
-Edita el archivo `data/disfraces.json` y agrega un nuevo objeto:
+Edita el archivo `data/disfraces.json` y agrega:
 
 ```json
 {
-  "id": 999,
+  "id": 21,
   "nombre": "Nombre del Disfraz",
-  "descripcion": "Descripción detallada",
+  "descripcion": "Descripción completa...",
   "categoria": "halloween",
-  "temporada": "otono",
-  "precio_alquiler": "25.00",
-  "precio_venta": "50.00",
-  "tallas": ["S", "M", "L", "XL"],
-  "disponible": true,
-  "imagen": "images/disfraces/halloween/nombre-disfraz.webp",
-  "imagen_thumb": "images/disfraces/halloween/thumbs/nombre-disfraz.webp"
+  "edad": "nino",
+  "tallas": ["S", "M", "L"],
+  "imagen": "images/disfraces/nombre.jpg",
+  "imagen_thumb": "images/disfraces/thumbs/nombre.jpg"
 }
 ```
 
 Ver `docs/COMO_AGREGAR_DISFRAZ.md` para instrucciones detalladas.
 
-## 🖼️ Optimización de Imágenes
-
-Para mantener el repositorio ligero, sigue estas recomendaciones:
-
-- **Formato:** WebP (mejor compresión)
-- **Tamaño thumbnail:** 300x400px (~30-50KB)
-- **Tamaño normal:** 800x1200px (~150-250KB)
-- **Herramientas recomendadas:**
-  - [Squoosh.app](https://squoosh.app) - Online
-  - [TinyPNG](https://tinypng.com) - Online
-  - ImageMagick - Línea de comandos
-
-Ver `docs/OPTIMIZAR_IMAGENES.md` para el proceso completo.
-
 ## 🎨 Categorías Disponibles
 
-- **Halloween** - Disfraces de terror y temática otoñal
+- **Halloween** - Disfraces de terror
+- **Navidad** - Papá Noel, elfos, renos, ángeles
 - **Carnaval** - Disfraces coloridos y festivos
-- **Infantiles** - Disfraces para niños y niñas
-- **Superhéroes** - Personajes de cómics y películas
-- **Princesas** - Vestidos de princesas y personajes de cuento
-- **Animales** - Disfraces de fauna diversa
-- **Profesiones** - Médicos, policías, bomberos, etc.
-- **Época** - Disfraces históricos y vintage
-
-## 🌐 Navegadores Soportados
-
-- Chrome/Edge (últimas 2 versiones)
-- Firefox (últimas 2 versiones)
-- Safari (últimas 2 versiones)
-- Opera (últimas 2 versiones)
-- Navegadores móviles (iOS Safari, Chrome Mobile)
+- **Superhéroes** - Personajes de acción
+- **Princesas** - Personajes de cuento
+- **Animales** - Fauna diversa
+- **Profesiones** - Médicos, policías, etc.
+- **Época** - Disfraces históricos
+- **Infantiles** - Disfraces generales para niños
 
 ## 📞 Contacto
 
 **Caritas Alegres**
-- 📱 Teléfono: 2890 291
-- 📍 Ubicación: [Tu dirección aquí]
-- ⏰ Horario: [Tu horario aquí]
+- 📱 Teléfono: +593 7-289-0291
+- 📍 Dirección: 42PM+JVR, Antonio Ricaurte, S/N, Ricaurte, 010205, Cuenca, Ecuador
+- ⏰ Horario: Lunes a Viernes 9:00-18:00, Sábados 9:00-14:00
 
 ## 📄 Licencia
 
 Este proyecto es de uso privado para Caritas Alegres.
 
-## 🤝 Contribuciones
-
-Este es un proyecto privado. Para sugerencias o mejoras, contacta directamente con el equipo de Caritas Alegres.
-
 ---
 
-**Última actualización:** Mayo 2026
-**Versión:** 1.0.0
+**Última actualización:** Mayo 2026  
+**Versión:** 2.0.0
