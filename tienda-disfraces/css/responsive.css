@@ -1,0 +1,251 @@
+/* ===================================
+   Responsive Design
+   =================================== */
+
+/* Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .costumes-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: var(--spacing-md);
+    }
+}
+
+/* Tablets pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    :root {
+        --spacing-xl: 2rem;
+        --spacing-xxl: 3rem;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* Header */
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: var(--background-white);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right var(--transition-normal);
+        z-index: 999;
+    }
+    
+    .nav.active {
+        right: 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        padding: var(--spacing-xxl) var(--spacing-lg);
+        gap: var(--spacing-md);
+    }
+    
+    .nav-list a {
+        font-size: 1.125rem;
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+    
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Hero */
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.125rem;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Filters */
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        min-width: 100%;
+    }
+    
+    #clear-filters {
+        width: 100%;
+    }
+    
+    /* Costumes Grid */
+    .costumes-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: var(--spacing-sm);
+    }
+    
+    .costume-card {
+        font-size: 0.9rem;
+    }
+    
+    .costume-name {
+        font-size: 1.125rem;
+    }
+    
+    .costume-prices {
+        grid-template-columns: 1fr;
+    }
+    
+    .price-item:first-child {
+        padding-bottom: var(--spacing-xs);
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    /* Contact */
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Móviles (hasta 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .service-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .service-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .costumes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-group input,
+    .filter-group select {
+        font-size: 0.875rem;
+    }
+}
+
+/* Móviles muy pequeños (hasta 360px) */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .costume-info {
+        padding: var(--spacing-sm);
+    }
+}
+
+/* Landscape móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .nav {
+        overflow-y: auto;
+    }
+}
+
+/* Accesibilidad - Reducir animaciones */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Impresión */
+@media print {
+    .header,
+    .menu-toggle,
+    .filters,
+    .btn,
+    .footer {
+        display: none;
+    }
+    
+    .costume-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}

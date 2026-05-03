@@ -1,0 +1,13 @@
+<svg width="800" height="1200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1200" fill="#F8F8F8"/>
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="48" fill="#B8A8C9" text-anchor="middle">
+    Caritas Alegres
+  </text>
+  <text x="400" y="640" font-family="Arial, sans-serif" font-size="32" fill="#7B7AB8" text-anchor="middle">
+    Imagen no disponible
+  </text>
+  <circle cx="400" cy="450" r="80" fill="none" stroke="#E8DC5A" stroke-width="4"/>
+  <path d="M 360 430 Q 400 460 440 430" fill="none" stroke="#E8DC5A" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="370" cy="420" r="8" fill="#7B7AB8"/>
+  <circle cx="430" cy="420" r="8" fill="#7B7AB8"/>
+</svg>
