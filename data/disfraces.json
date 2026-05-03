@@ -5,8 +5,8 @@
     "categoria": "navidad",
     "edad": "nino",
     "genero": "unisex",
-    "imagen": "images/disfraces/duende-navidad.jpg",
-    "imagen_thumb": "images/disfraces/duende-navidad.jpg"
+    "imagen": "images/disfraces/duende-navidad.png",
+    "imagen_thumb": "images/disfraces/duende-navidad.png"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "categoria": "infantiles",
     "edad": "nino",
     "genero": "unisex",
-    "imagen": "images/disfraces/minion.jpg",
-    "imagen_thumb": "images/disfraces/minion.jpg"
+    "imagen": "images/disfraces/minion.png",
+    "imagen_thumb": "images/disfraces/minion.png"
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "categoria": "superheroes",
     "edad": "adulto",
     "genero": "hombre",
-    "imagen": "images/disfraces/mr-increible.jpg",
-    "imagen_thumb": "images/disfraces/mr-increible.jpg"
+    "imagen": "images/disfraces/mr-increible.png",
+    "imagen_thumb": "images/disfraces/mr-increible.png"
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "categoria": "superheroes",
     "edad": "adulto",
     "genero": "mujer",
-    "imagen": "images/disfraces/mujer-maravilla.jpg",
-    "imagen_thumb": "images/disfraces/mujer-maravilla.jpg"
+    "imagen": "images/disfraces/mujer-maravilla.png",
+    "imagen_thumb": "images/disfraces/mujer-maravilla.png"
   },
   {
     "id": 5,
@@ -41,8 +41,8 @@
     "categoria": "navidad",
     "edad": "adulto",
     "genero": "hombre",
-    "imagen": "images/disfraces/papa-noel.jpg",
-    "imagen_thumb": "images/disfraces/papa-noel.jpg"
+    "imagen": "images/disfraces/papa-noel.png",
+    "imagen_thumb": "images/disfraces/papa-noel.png"
   },
   {
     "id": 6,
@@ -50,8 +50,8 @@
     "categoria": "navidad",
     "edad": "adulto",
     "genero": "hombre",
-    "imagen": "images/disfraces/pastor-belen.jpg",
-    "imagen_thumb": "images/disfraces/pastor-belen.jpg"
+    "imagen": "images/disfraces/pastor-belen.png",
+    "imagen_thumb": "images/disfraces/pastor-belen.png"
   },
   {
     "id": 7,
@@ -59,8 +59,8 @@
     "categoria": "infantiles",
     "edad": "nino",
     "genero": "nina",
-    "imagen": "images/disfraces/pirata-caribe.jpg",
-    "imagen_thumb": "images/disfraces/pirata-caribe.jpg"
+    "imagen": "images/disfraces/pirata-caribe.png",
+    "imagen_thumb": "images/disfraces/pirata-caribe.png"
   },
   {
     "id": 8,
@@ -68,7 +68,7 @@
     "categoria": "princesas",
     "edad": "nino",
     "genero": "nina",
-    "imagen": "images/disfraces/princesa-elsa.jpg",
-    "imagen_thumb": "images/disfraces/princesa-elsa.jpg"
+    "imagen": "images/disfraces/princesa-elsa.png",
+    "imagen_thumb": "images/disfraces/princesa-elsa.png"
   }
 ]
