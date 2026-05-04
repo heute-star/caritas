@@ -1,5 +1,5 @@
 // ===================================
-// Main Application Logic - Caritas Alegres
+// Main Application Logic - Caritas Alegres V3
 // ===================================
 
 /**
@@ -236,6 +236,7 @@ async function initializeApp() {
     
     filterCostumes();
     renderCostumes();
+    renderPopularCostumes();  // ← NUEVO: Renderizar disfraces populares
     
     console.log('Aplicación inicializada correctamente');
 }

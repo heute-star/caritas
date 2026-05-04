@@ -1,52 +1,37 @@
 /* ===================================
-   CARITAS ALEGRES - STYLES
-   Diseño profesional y limpio
+   CARITAS ALEGRES - STYLES V3
+   - Galería real de fotos
+   - Disfraces populares
+   - Botones flotantes amarillos
+   - Contacto simplificado  
    =================================== */
 
-/* Variables CSS */
 :root {
-    /* Colores principales */
     --color-primary-yellow: #E8DC5A;
     --color-primary-purple: #7B7AB8;
     --color-lilac: #B8A8C9;
     --color-accent-pink: #FF9AA2;
-    
-    /* Colores de texto */
     --color-text-dark: #2C2C2C;
     --color-text-light: #666666;
     --color-text-white: #FFFFFF;
-    
-    /* Colores de fondo */
     --color-bg-light: #FAFAFA;
     --color-bg-white: #FFFFFF;
-    --color-bg-overlay: rgba(0, 0, 0, 0.6);
-    
-    /* Tipografía */
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    
-    /* Espaciado */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    
-    /* Bordes */
     --border-radius-sm: 8px;
     --border-radius-md: 12px;
     --border-radius-lg: 16px;
-    
-    /* Sombras */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
-    
-    /* Transiciones */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
 }
 
-/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -67,10 +52,7 @@ body {
     padding: 0 var(--spacing-md);
 }
 
-/* ===================================
-   HEADER
-   =================================== */
-
+/* Header */
 .header {
     background: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-lilac) 100%);
     position: sticky;
@@ -112,7 +94,7 @@ body {
 }
 
 .tagline {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--color-primary-yellow);
     font-weight: 500;
 }
@@ -151,10 +133,7 @@ body {
     transition: var(--transition-fast);
 }
 
-/* ===================================
-   FLOATING BUTTONS
-   =================================== */
-
+/* Floating Buttons - AMARILLOS */
 .floating-buttons {
     position: fixed;
     bottom: 2rem;
@@ -175,27 +154,16 @@ body {
     font-weight: 600;
     box-shadow: var(--shadow-lg);
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    background: var(--color-primary-yellow);
+    color: var(--color-primary-purple);
 }
 
 .floating-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 40px rgba(232, 220, 90, 0.4);
 }
 
-.btn-call {
-    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-    color: white;
-}
-
-.btn-catalog {
-    background: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-lilac) 100%);
-    color: white;
-}
-
-/* ===================================
-   MODAL DE IMAGEN
-   =================================== */
-
+/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -226,12 +194,8 @@ body {
 }
 
 @keyframes zoomIn {
-    from {
-        transform: translate(-50%, -50%) scale(0.7);
-    }
-    to {
-        transform: translate(-50%, -50%) scale(1);
-    }
+    from { transform: translate(-50%, -50%) scale(0.7); }
+    to { transform: translate(-50%, -50%) scale(1); }
 }
 
 .modal-close {
@@ -264,79 +228,38 @@ body {
     max-width: 80%;
 }
 
-/* ===================================
-   HERO GALLERY (Promociones)
-   =================================== */
-
+/* Hero Gallery - 3 fotos */
 .hero-gallery {
     padding: var(--spacing-xl) 0;
     background: var(--color-bg-white);
 }
 
-.gallery-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--color-primary-purple);
-    margin-bottom: var(--spacing-lg);
-}
-
-.promo-grid {
+.gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
 }
 
-.promo-card {
-    border-radius: var(--border-radius-lg);
+.gallery-item {
+    border-radius: var(--border-radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    transition: transform var(--transition-normal);
 }
 
-.promo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+.gallery-item:hover {
+    transform: translateY(-5px);
 }
 
-.promo-image {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
 }
 
-.promo-image.halloween {
-    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
-}
-
-.promo-image.carnaval {
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-}
-
-.promo-image.navidad {
-    background: linear-gradient(135deg, #C41E3A 0%, #165B33 100%);
-}
-
-.promo-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
-    padding: var(--spacing-lg);
-    color: var(--color-text-white);
-}
-
-.promo-overlay h3 {
-    font-size: 1.8rem;
-    margin-bottom: var(--spacing-xs);
-}
-
-/* ===================================
-   SERVICES SECTION
-   =================================== */
-
-.services {
+/* Popular Costumes */
+.popular-costumes {
     padding: var(--spacing-xl) 0;
     background: var(--color-bg-light);
 }
@@ -348,41 +271,7 @@ body {
     margin-bottom: var(--spacing-xl);
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.service-card {
-    background: var(--color-bg-white);
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius-md);
-    text-align: center;
-    box-shadow: var(--shadow-sm);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.service-icon {
-    color: var(--color-primary-purple);
-    margin-bottom: var(--spacing-md);
-}
-
-.service-card h3 {
-    color: var(--color-primary-purple);
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-sm);
-}
-
-/* ===================================
-   CATALOG SECTION
-   =================================== */
-
+/* Catalog */
 .catalog {
     padding: var(--spacing-xl) 0;
     background: var(--color-bg-white);
@@ -459,10 +348,7 @@ body {
     color: var(--color-text-light);
 }
 
-/* ===================================
-   COSTUMES GRID
-   =================================== */
-
+/* Costumes Grid */
 .costumes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -535,10 +421,7 @@ body {
     line-height: 1.4;
 }
 
-/* ===================================
-   NO RESULTS & LOADING
-   =================================== */
-
+/* No Results & Loading */
 .no-results {
     text-align: center;
     padding: var(--spacing-xl);
@@ -572,112 +455,61 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* ===================================
-   LOCATION SECTION
-   =================================== */
-
-.location {
+/* Contact - Simplificado */
+.contact {
     padding: var(--spacing-xl) 0;
     background: var(--color-bg-light);
 }
 
-.location-content {
+.contact-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-lg);
 }
 
-.location-card {
+.contact-card {
     background: var(--color-bg-white);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-md);
     text-align: center;
     box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
-.location-icon {
-    margin-bottom: var(--spacing-md);
-}
-
-.location-card h3 {
-    color: var(--color-primary-purple);
-    margin-bottom: var(--spacing-sm);
-}
-
-.location-card p {
-    margin-bottom: var(--spacing-md);
-    color: var(--color-text-light);
-}
-
-.location-map iframe {
-    border-radius: var(--border-radius-md);
+.contact-card:hover {
+    transform: translateY(-5px);
     box-shadow: var(--shadow-md);
 }
 
-/* ===================================
-   CONTACT SECTION
-   =================================== */
-
-.contact {
-    padding: var(--spacing-xl) 0;
-    background: var(--color-bg-white);
-}
-
-.contact-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: var(--spacing-xl);
-}
-
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.contact-item {
-    background: var(--color-bg-light);
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius-md);
-    text-align: center;
-}
-
 .contact-icon {
-    font-size: 3rem;
-    margin-bottom: var(--spacing-sm);
-}
-
-.contact-item h3 {
-    color: var(--color-primary-purple);
-    margin-bottom: var(--spacing-sm);
-}
-
-.contact-item a {
-    color: var(--color-primary-purple);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.contact-cta {
-    background: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-lilac) 100%);
-    color: var(--color-text-white);
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius-md);
-    text-align: center;
-}
-
-.contact-cta h3 {
-    margin-bottom: var(--spacing-sm);
-}
-
-.contact-cta p {
     margin-bottom: var(--spacing-md);
 }
 
-/* ===================================
-   FOOTER
-   =================================== */
+.contact-card h3 {
+    color: var(--color-primary-purple);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
 
+.contact-card p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-dark);
+    line-height: 1.8;
+}
+
+.contact-card a {
+    color: var(--color-primary-purple);
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-card a:hover {
+    color: var(--color-white);
+}
+
+/* Footer */
 .footer {
     background: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-lilac) 100%);
     color: var(--color-text-white);

@@ -1,9 +1,10 @@
 // ===================================
-// Filters and Search Logic - Caritas Alegres V2
+// Filters and Search Logic - Caritas Alegres V3
 // ===================================
 
 /**
  * Filtra los disfraces según los criterios seleccionados
+ * BÚSQUEDA MEJORADA: palabras individuales + categoría + edad + género
  */
 function filterCostumes() {
     const searchTerm = document.getElementById('search').value.toLowerCase().trim();
@@ -11,10 +12,26 @@ function filterCostumes() {
     const age = document.getElementById('age-filter').value;
 
     filteredCostumes = costumesData.filter(costume => {
-        // Filtro de búsqueda por nombre y descripción
-        const matchesSearch = searchTerm === '' || 
-            costume.nombre.toLowerCase().includes(searchTerm) ||
-            costume.descripcion.toLowerCase().includes(searchTerm);
+        // Filtro de búsqueda MEJORADO
+        let matchesSearch = true;
+        
+        if (searchTerm !== '') {
+            // Dividir búsqueda en palabras individuales
+            const searchWords = searchTerm.split(/\s+/);
+            
+            // Texto donde buscar (nombre + categoría + edad + género)
+            const searchableText = `
+                ${costume.nombre.toLowerCase()}
+                ${costume.categoria.toLowerCase()}
+                ${costume.edad.toLowerCase()}
+                ${costume.genero.toLowerCase()}
+                ${getCategoryName(costume.categoria).toLowerCase()}
+                ${getAgeName(costume.edad).toLowerCase()}
+            `.replace(/\s+/g, ' ');
+            
+            // Cada palabra debe aparecer en algún lugar
+            matchesSearch = searchWords.every(word => searchableText.includes(word));
+        }
 
         // Filtro de categoría
         const matchesCategory = category === 'todas' || costume.categoria === category;
