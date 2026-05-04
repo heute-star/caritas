@@ -140,7 +140,7 @@
     "categoria": "animales",
     "edad": "adulto",
     "genero": "unisex",
-    "imagen": "images/disfraces/burro",
-    "imagen_thumb": "images/disfraces/burro"
+    "imagen": "images/disfraces/burro.png",
+    "imagen_thumb": "images/disfraces/burro.png"
   }
 ]
