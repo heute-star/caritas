@@ -20,7 +20,7 @@ function getPopularCostumes() {
     const allCostumes = getAllCostumes();
     
     if (Object.keys(clicks).length === 0) {
-        return allCostumes.slice(0, 4);
+        return allCostumes.slice(0, 3);
     }
     
     const sortedByClicks = allCostumes
@@ -29,7 +29,7 @@ function getPopularCostumes() {
             clicks: clicks[costume.id] || 0
         }))
         .sort((a, b) => b.clicks - a.clicks)
-        .slice(0, 4);
+        .slice(0, 3);
     
     return sortedByClicks;
 }
