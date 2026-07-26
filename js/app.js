@@ -82,6 +82,7 @@ function updateModalDisplay() {
     const modalCaption = document.getElementById('modal-caption');
     const arrowLeft = document.getElementById('modal-arrow-left');
     const arrowRight = document.getElementById('modal-arrow-right');
+    const indicator = document.getElementById('modal-variant-indicator');
 
     const costume = currentModalVariants[currentModalIndex];
     modalImg.src = costume.imagen || 'images/placeholder.svg';
@@ -91,6 +92,10 @@ function updateModalDisplay() {
     const hasMultiple = currentModalVariants.length > 1;
     if (arrowLeft) arrowLeft.style.display = hasMultiple ? 'flex' : 'none';
     if (arrowRight) arrowRight.style.display = hasMultiple ? 'flex' : 'none';
+    if (indicator) {
+        indicator.style.display = hasMultiple ? 'block' : 'none';
+        indicator.textContent = `${currentModalIndex + 1}/${currentModalVariants.length}`;
+    }
 }
 
 /**
@@ -313,6 +318,41 @@ function handleImageErrors() {
 }
 
 /**
+ * Detecta gestos de swipe (deslizar) horizontal sobre la imagen del modal,
+ * para cambiar de variante en móvil sin necesitar tocar las flechas
+ */
+function initializeModalSwipe() {
+    const modalImg = document.getElementById('modal-image');
+    if (!modalImg) return;
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    modalImg.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    modalImg.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].screenX;
+        const touchEndY = e.changedTouches[0].screenY;
+        const deltaX = touchEndX - touchStartX;
+        const deltaY = touchEndY - touchStartY;
+
+        const minSwipeDistance = 45;
+        const isMostlyHorizontal = Math.abs(deltaX) > Math.abs(deltaY);
+
+        if (isMostlyHorizontal && Math.abs(deltaX) > minSwipeDistance) {
+            if (deltaX < 0) {
+                changeModalVariant(1);  // deslizó hacia la izquierda → siguiente
+            } else {
+                changeModalVariant(-1); // deslizó hacia la derecha → anterior
+            }
+        }
+    }, { passive: true });
+}
+
+/**
  * Inicializa modal listeners
  */
 function initializeModal() {
@@ -358,6 +398,8 @@ function initializeModal() {
             changeModalVariant(1);
         }
     });
+
+    initializeModalSwipe();
 }
 
 /**

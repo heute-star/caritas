@@ -263,6 +263,21 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+.modal-variant-indicator {
+    display: none; /* JS lo activa solo cuando hay más de 1 variante */
+    position: absolute;
+    bottom: 5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    background: rgba(44, 44, 44, 0.75);
+    color: var(--color-text-white);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.3rem 0.9rem;
+    border-radius: 14px;
+}
+
 /* Hero Banner - Carrusel automático */
 .hero-banner {
     background: var(--color-bg-white);
@@ -658,18 +673,46 @@ body {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 
+    /* Modal: la foto vertical aprovecha casi toda la pantalla,
+       y los controles (flechas + indicador + nombre) se agrupan
+       en una barra fija cerca del borde inferior, en vez de flotar
+       sobre la foto como en desktop */
+    .modal-content {
+        max-width: 96vw;
+        max-height: 60vh;
+        top: 42%;
+        border-width: 2px;
+    }
+
+    #modal-caption {
+        bottom: 5rem;
+        left: 50%;
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+        max-width: 90%;
+    }
+
+    .modal-variant-indicator {
+        bottom: 1.3rem;
+    }
+
     .modal-arrow {
-        width: 42px;
-        height: 42px;
+        position: fixed;
+        top: auto;
+        bottom: 1.1rem;
+        transform: none;
+        width: 46px;
+        height: 46px;
         font-size: 1.1rem;
     }
 
     .modal-arrow-left {
-        left: 0.75rem;
+        left: calc(50% - 90px);
     }
 
     .modal-arrow-right {
-        right: 0.75rem;
+        left: calc(50% + 44px);
+        right: auto;
     }
     
     .floating-btn span {
