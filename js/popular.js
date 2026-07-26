@@ -1,76 +1,44 @@
-// Popular V4 - 4 disfraces
-
-function getClickCounts() {
-    const stored = localStorage.getItem('costumeClicks');
-    return stored ? JSON.parse(stored) : {};
-}
-
-function saveClickCounts(clicks) {
-    localStorage.setItem('costumeClicks', JSON.stringify(clicks));
-}
-
-function trackCostumeClick(costumeId) {
-    const clicks = getClickCounts();
-    clicks[costumeId] = (clicks[costumeId] || 0) + 1;
-    saveClickCounts(clicks);
-}
+// ===================================
+// Popular Costumes V6
+// Ya NO se basa en clicks acumulados: siempre muestra 1 disfraz al azar
+// de cada personaje del elenco (hombre, mujer, niño, niña)
+// ===================================
 
 function getPopularCostumes() {
-    const clicks = getClickCounts();
     const allCostumes = getAllCostumes();
-    
-    if (Object.keys(clicks).length === 0) {
-        return allCostumes.slice(0, 3);
-    }
-    
-    const sortedByClicks = allCostumes
-        .map(costume => ({
-            ...costume,
-            clicks: clicks[costume.id] || 0
-        }))
-        .sort((a, b) => b.clicks - a.clicks)
-        .slice(0, 3);
-    
-    return sortedByClicks;
+    const castMembers = ['hombre', 'mujer', 'nino', 'nina'];
+    const picks = [];
+
+    castMembers.forEach(genero => {
+        const options = allCostumes.filter(c => c.genero === genero);
+        if (options.length > 0) {
+            const randomIndex = Math.floor(Math.random() * options.length);
+            picks.push(options[randomIndex]);
+        }
+    });
+
+    return picks;
 }
 
 function renderPopularCostumes() {
     const popularGrid = document.getElementById('popular-grid');
     if (!popularGrid) return;
-    
+
     const popularCostumes = getPopularCostumes();
-    
+
     if (popularCostumes.length === 0) {
         popularGrid.innerHTML = '<p>Aún no hay disfraces disponibles</p>';
         return;
     }
-    
+
     popularGrid.innerHTML = '';
     const fragment = document.createDocumentFragment();
-    
+
     popularCostumes.forEach(costume => {
-        const card = createCostumeCard(costume);
+        // Se pasa como array de 1 elemento: tarjeta simple, sin flechas de variante
+        const card = createCostumeCard([costume]);
         fragment.appendChild(card);
     });
-    
+
     popularGrid.appendChild(fragment);
 }
-
-function initializeClickTracking() {
-    document.addEventListener('click', (e) => {
-        const costumeImage = e.target.closest('.costume-image');
-        if (costumeImage) {
-            const card = costumeImage.closest('.costume-card');
-            if (card) {
-                const costumeId = parseInt(card.getAttribute('data-id'));
-                if (costumeId) {
-                    trackCostumeClick(costumeId);
-                }
-            }
-        }
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    initializeClickTracking();
-});

@@ -1,5 +1,5 @@
 // ===================================
-// Data Management - Caritas Alegres V3
+// Data Management - Caritas Alegres V5
 // ===================================
 
 let costumesData = [];
@@ -73,13 +73,12 @@ const translations = {
     categories: {
         'halloween': 'Halloween',
         'navidad': 'Navidad',
-        'carnaval': 'Carnaval',
-        'superheroes': 'Superhéroes',
-        'princesas': 'Princesas',
+        'religioso': 'Religioso',
+        'tradicional': 'Tradicional',
+        'animados': 'Personajes Animados',
         'animales': 'Animales',
         'profesiones': 'Profesiones',
-        'epoca': 'Época',
-        'infantiles': 'Infantiles'
+        'epoca': 'Época'
     },
     ages: {
         'nino': 'Niños',

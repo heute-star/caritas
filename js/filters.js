@@ -1,10 +1,10 @@
 // ===================================
-// Filters and Search Logic - Caritas Alegres V3
+// Filters and Search Logic - Caritas Alegres V5
 // ===================================
 
 /**
  * Filtra los disfraces según los criterios seleccionados
- * BÚSQUEDA MEJORADA: palabras individuales + categoría + edad + género
+ * BÚSQUEDA MEJORADA: palabras individuales + categoría + edad + género + palabras clave
  */
 function filterCostumes() {
     const searchTerm = document.getElementById('search').value.toLowerCase().trim();
@@ -12,31 +12,25 @@ function filterCostumes() {
     const age = document.getElementById('age-filter').value;
 
     filteredCostumes = costumesData.filter(costume => {
-        // Filtro de búsqueda MEJORADO
         let matchesSearch = true;
         
         if (searchTerm !== '') {
-            // Dividir búsqueda en palabras individuales
             const searchWords = searchTerm.split(/\s+/);
             
-            // Texto donde buscar (nombre + categoría + edad + género)
             const searchableText = `
                 ${costume.nombre.toLowerCase()}
                 ${costume.categoria.toLowerCase()}
                 ${costume.edad.toLowerCase()}
                 ${costume.genero.toLowerCase()}
+                ${costume.palabras_clave ? costume.palabras_clave.toLowerCase() : ''}
                 ${getCategoryName(costume.categoria).toLowerCase()}
                 ${getAgeName(costume.edad).toLowerCase()}
             `.replace(/\s+/g, ' ');
             
-            // Cada palabra debe aparecer en algún lugar
             matchesSearch = searchWords.every(word => searchableText.includes(word));
         }
 
-        // Filtro de categoría
         const matchesCategory = category === 'todas' || costume.categoria === category;
-
-        // Filtro de edad
         const matchesAge = age === 'todas' || costume.edad === age;
 
         return matchesSearch && matchesCategory && matchesAge;
@@ -78,12 +72,13 @@ function sortCostumes(costumes, sortBy = 'nombre') {
 }
 
 /**
- * Actualiza el contador de resultados
+ * Actualiza el contador de resultados (fix: singular/plural correcto)
  */
 function updateResultsCount(count) {
     const resultsCount = document.getElementById('results-count');
     if (resultsCount) {
-        resultsCount.innerHTML = `Mostrando <strong>${count}</strong> disfrace${count !== 1 ? 's' : ''}`;
+        const word = count === 1 ? 'disfraz' : 'disfraces';
+        resultsCount.innerHTML = `Mostrando <strong>${count}</strong> ${word}`;
     }
 }
 

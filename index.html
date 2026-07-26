@@ -17,7 +17,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <div class="logo-placeholder">CA</div>
+                    <img src="images/logo-caritas-alegres.svg" alt="Caritas Alegres" class="logo-image" onerror="this.src='images/placeholder.svg'">
                     <div class="logo-text">
                         <h1>Caritas Alegres</h1>
                         <p class="tagline">Su disfraz desde 1998!</p>
@@ -62,16 +62,19 @@
     <!-- Modal de Imagen -->
     <div id="image-modal" class="modal">
         <span class="modal-close">&times;</span>
+        <button type="button" id="modal-arrow-left" class="modal-arrow modal-arrow-left" aria-label="Variante anterior">&#10094;</button>
+        <button type="button" id="modal-arrow-right" class="modal-arrow modal-arrow-right" aria-label="Siguiente variante">&#10095;</button>
         <img class="modal-content" id="modal-image" alt="">
         <div id="modal-caption"></div>
     </div>
 
-    <!-- Hero Banner -->
+    <!-- Hero Banner (Carrusel Automático) -->
     <section id="inicio" class="hero-banner">
         <div class="banner-container">
-            <img src="images/banner/banner-1.jpg" alt="Caritas Alegres Disfraces" class="banner-image" onerror="this.src='images/placeholder.svg'">
+            <img src="images/banner/banner-1.jpg" alt="Caritas Alegres Disfraces" class="banner-image active" onerror="this.src='images/placeholder.svg'">
             <img src="images/banner/banner-2.jpg" alt="Caritas Alegres Disfraces" class="banner-image" onerror="this.src='images/placeholder.svg'">
             <img src="images/banner/banner-3.jpg" alt="Caritas Alegres Disfraces" class="banner-image" onerror="this.src='images/placeholder.svg'">
+            <img src="images/banner/banner-4.jpg" alt="Caritas Alegres Disfraces" class="banner-image" onerror="this.src='images/placeholder.svg'">
         </div>
     </section>
 
@@ -79,7 +82,7 @@
     <section class="popular-costumes">
         <div class="container">
             <h2 class="section-title">Disfraces Populares</h2>
-            <div id="popular-grid" class="costumes-grid">
+            <div id="popular-grid" class="costumes-grid popular-grid">
                 <!-- Los 3 disfraces más clickeados se cargan aquí -->
             </div>
         </div>
@@ -103,13 +106,12 @@
                         <option value="todas">Todas las categorías</option>
                         <option value="halloween">Halloween</option>
                         <option value="navidad">Navidad</option>
-                        <option value="carnaval">Carnaval</option>
-                        <option value="superheroes">Superhéroes</option>
-                        <option value="princesas">Princesas</option>
+                        <option value="religioso">Religioso</option>
+                        <option value="tradicional">Tradicional</option>
+                        <option value="animados">Personajes Animados</option>
                         <option value="animales">Animales</option>
                         <option value="profesiones">Profesiones</option>
                         <option value="epoca">Época</option>
-                        <option value="infantiles">Infantiles</option>
                     </select>
                 </div>
                 
@@ -200,7 +202,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <div class="footer-logo-placeholder">CA</div>
+                    <img src="images/logo-caritas-alegres.svg" alt="Caritas Alegres" class="footer-logo-image" onerror="this.src='images/placeholder.svg'">
                     <h3>Caritas Alegres</h3>
                     <p>Su disfraz desde 1998!</p>
                 </div>
@@ -224,5 +226,6 @@
     <script src="js/filters.js"></script>
     <script src="js/app.js"></script>
     <script src="js/popular.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 </html>

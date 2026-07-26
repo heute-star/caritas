@@ -35,14 +35,12 @@ jobs:
           
           print("🔍 Verificando archivo Excel...")
           
-          # Verificar que el archivo existe
           if not os.path.exists('inventario-disfraces.xlsx'):
               print("❌ ERROR: No se encontró inventario-disfraces.xlsx")
               exit(1)
           
           print("✅ Archivo encontrado")
           
-          # Leer Excel
           try:
               wb = openpyxl.load_workbook('inventario-disfraces.xlsx')
               print(f"📋 Hojas disponibles: {wb.sheetnames}")
@@ -54,20 +52,21 @@ jobs:
           
           disfraces = []
           
-          # Saltar header (fila 1)
           for idx, row in enumerate(ws.iter_rows(min_row=2, values_only=True), start=2):
-              if row[0] is None:  # Si no hay ID, saltar fila vacía
+              if row[0] is None:
                   continue
               
               try:
                   disfraz = {
                       "id": int(row[0]),
-                      "nombre": str(row[2]),  # Nombre completo descriptivo
+                      "nombre": str(row[2]),
                       "categoria": str(row[3]).lower(),
                       "edad": str(row[4]).lower(),
                       "genero": str(row[5]).lower() if row[5] else "unisex",
                       "imagen": f"images/disfraces/{row[1]}",
-                      "imagen_thumb": f"images/disfraces/{row[1]}"
+                      "imagen_thumb": f"images/disfraces/{row[1]}",
+                      "palabras_clave": str(row[6]).lower() if len(row) > 6 and row[6] else "",
+                      "grupo": str(row[7]).lower() if len(row) > 7 and row[7] else f"grupo-{int(row[0])}"
                   }
                   disfraces.append(disfraz)
                   print(f"✅ Fila {idx}: {disfraz['nombre']}")
@@ -75,10 +74,8 @@ jobs:
                   print(f"⚠️  Error en fila {idx}: {e}")
                   continue
           
-          # Crear directorio data si no existe
           os.makedirs('data', exist_ok=True)
           
-          # Guardar JSON
           with open('data/disfraces.json', 'w', encoding='utf-8') as f:
               json.dump(disfraces, f, ensure_ascii=False, indent=2)
           
