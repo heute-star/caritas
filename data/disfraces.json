@@ -56,9 +56,9 @@
   {
     "id": 7,
     "nombre": "Disfraz de Pirata del Caribe Mujer",
-    "categoria": "infantiles",
-    "edad": "nino",
-    "genero": "nina",
+    "categoria": "epoca",
+    "edad": "adulto",
+    "genero": "mujer",
     "imagen": "images/disfraces/pirata-caribe.png",
     "imagen_thumb": "images/disfraces/pirata-caribe.png"
   },
@@ -70,5 +70,77 @@
     "genero": "nina",
     "imagen": "images/disfraces/princesa-elsa.png",
     "imagen_thumb": "images/disfraces/princesa-elsa.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Disfraz de Willy Wonka y la Fábrica de Chocolates",
+    "categoria": "halloween",
+    "edad": "adulto",
+    "genero": "unisex",
+    "imagen": "images/disfraces/willy-wonka.png",
+    "imagen_thumb": "images/disfraces/willy-wonka.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Disfraz con Peluca Amarilla",
+    "categoria": "carnaval",
+    "edad": "adulto",
+    "genero": "unisex",
+    "imagen": "images/disfraces/peluca-amarilla.png",
+    "imagen_thumb": "images/disfraces/peluca-amarilla.png"
+  },
+  {
+    "id": 11,
+    "nombre": "Disfraz de Michael Jackson Rey del Pop",
+    "categoria": "profesiones",
+    "edad": "adulto",
+    "genero": "hombre",
+    "imagen": "images/disfraces/michael-jackson.png",
+    "imagen_thumb": "images/disfraces/michael-jackson.png"
+  },
+  {
+    "id": 12,
+    "nombre": "Disfraz de Harley Queen Mujer",
+    "categoria": "superheroes",
+    "edad": "adulto",
+    "genero": "mujer",
+    "imagen": "images/disfraces/harley-queen.png",
+    "imagen_thumb": "images/disfraces/harley-queen.png"
+  },
+  {
+    "id": 13,
+    "nombre": "Disfraz de Flash Superheroe",
+    "categoria": "superheroes",
+    "edad": "adulto",
+    "genero": "hombre",
+    "imagen": "images/disfraces/flash.png",
+    "imagen_thumb": "images/disfraces/flash.png"
+  },
+  {
+    "id": 14,
+    "nombre": "Disfraz de Emperador Griego",
+    "categoria": "epoca",
+    "edad": "adulto",
+    "genero": "hombre",
+    "imagen": "images/disfraces/emperador-griego.png",
+    "imagen_thumb": "images/disfraces/emperador-griego.png"
+  },
+  {
+    "id": 15,
+    "nombre": "Disfraz de Diosa Griega",
+    "categoria": "epoca",
+    "edad": "adulto",
+    "genero": "mujer",
+    "imagen": "images/disfraces/diosa-griega.png",
+    "imagen_thumb": "images/disfraces/diosa-griega.png"
+  },
+  {
+    "id": 16,
+    "nombre": "Disfraz de Burro Café",
+    "categoria": "animales",
+    "edad": "adulto",
+    "genero": "unisex",
+    "imagen": "images/disfraces/burro.png",
+    "imagen_thumb": "images/disfraces/burro.png"
   }
 ]
