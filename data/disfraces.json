@@ -6,9 +6,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/bombero.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/bombero.png",
     "palabras_clave": "bombero, fireman, extintor, incendio, rescate, uniforme, profesion, disfraz escolar",
     "grupo": "bombero"
+=======
+    "imagen_thumb": "images/disfraces/hombre/bombero.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 2,
@@ -17,9 +21,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/charro-mexicano.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/charro-mexicano.png",
     "palabras_clave": "charro, mexico, mexicano, sombrero, folclorico, tradicional, dia de muertos, fiestas patrias",
     "grupo": "charro-mexicano"
+=======
+    "imagen_thumb": "images/disfraces/hombre/charro-mexicano.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 3,
@@ -28,9 +36,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/detective.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/detective.png",
     "palabras_clave": "detective, sherlock, investigador, gabardina, lupa, misterio, disfraz de epoca",
     "grupo": "detective"
+=======
+    "imagen_thumb": "images/disfraces/hombre/detective.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 4,
@@ -39,9 +51,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/espantapajaros.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/espantapajaros.png",
     "palabras_clave": "espantapajaros, scarecrow, halloween, paja, granja, mago de oz",
     "grupo": "espantapajaros"
+=======
+    "imagen_thumb": "images/disfraces/hombre/espantapajaros.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 5,
@@ -50,9 +66,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/gaucho.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/gaucho.png",
     "palabras_clave": "gaucho, argentina, poncho, folclorico, tradicional, campo",
     "grupo": "gaucho"
+=======
+    "imagen_thumb": "images/disfraces/hombre/gaucho.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 6,
@@ -61,9 +81,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/hombre-lobo.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/hombre-lobo.png",
     "palabras_clave": "hombre lobo, lobo, werewolf, halloween, monstruo, licantropo",
     "grupo": "hombre-lobo"
+=======
+    "imagen_thumb": "images/disfraces/hombre/hombre-lobo.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 7,
@@ -72,9 +96,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/jose.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/jose.png",
     "palabras_clave": "san jose, jose, biblico, nacimiento, pesebre, pase del nino, navidad religiosa",
     "grupo": "san-jose"
+=======
+    "imagen_thumb": "images/disfraces/hombre/jose.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 8,
@@ -83,9 +111,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/kimono.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/kimono.png",
     "palabras_clave": "kimono, japon, japones, oriental, tradicional, asiatico",
     "grupo": "kimono"
+=======
+    "imagen_thumb": "images/disfraces/hombre/kimono.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 9,
@@ -94,9 +126,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/marinero.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/marinero.png",
     "palabras_clave": "marinero, sailor, nautico, barco, capitan, mar",
     "grupo": "marinero"
+=======
+    "imagen_thumb": "images/disfraces/hombre/marinero.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 10,
@@ -105,9 +141,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/medieval-caballero.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/medieval-caballero.png",
     "palabras_clave": "caballero, medieval, armadura, gladiador, espada, edad media, epoca",
     "grupo": "medieval-caballero"
+=======
+    "imagen_thumb": "images/disfraces/hombre/medieval-caballero.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 11,
@@ -116,9 +156,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/montubio.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/montubio.png",
     "palabras_clave": "montubio, costa, ecuador, folclorico, tradicional, campesino",
     "grupo": "montubio"
+=======
+    "imagen_thumb": "images/disfraces/hombre/montubio.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 12,
@@ -127,9 +171,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/papa-noel.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/papa-noel.png",
     "palabras_clave": "papa noel, santa claus, navidad, santa, gorro rojo",
     "grupo": "papa-noel"
+=======
+    "imagen_thumb": "images/disfraces/hombre/papa-noel.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 13,
@@ -138,9 +186,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/payaso-siniestro.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/payaso-siniestro.png",
     "palabras_clave": "payaso siniestro, clown, payaso malo, halloween, terror, miedo",
     "grupo": "payaso-siniestro"
+=======
+    "imagen_thumb": "images/disfraces/hombre/payaso-siniestro.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 14,
@@ -149,9 +201,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/piloto.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/piloto.png",
     "palabras_clave": "piloto, aviador, avion, uniforme, profesion, capitan",
     "grupo": "piloto"
+=======
+    "imagen_thumb": "images/disfraces/hombre/piloto.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 15,
@@ -160,9 +216,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/rey.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/rey.png",
     "palabras_clave": "rey mago, reyes magos, melchor, gaspar, baltazar, pesebre, pase del nino",
     "grupo": "rey-mago"
+=======
+    "imagen_thumb": "images/disfraces/hombre/rey.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 16,
@@ -171,9 +231,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/romano.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/romano.png",
     "palabras_clave": "romano, roma, gladiador, epoca, historico, imperio romano",
     "grupo": "romano"
+=======
+    "imagen_thumb": "images/disfraces/hombre/romano.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 17,
@@ -182,9 +246,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/vampiro.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/vampiro.png",
     "palabras_clave": "vampiro, dracula, halloween, capa, colmillos, gotico",
     "grupo": "vampiro-clasico"
+=======
+    "imagen_thumb": "images/disfraces/hombre/vampiro.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 18,
@@ -193,9 +261,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/vaquero.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/vaquero.png",
     "palabras_clave": "vaquero, cowboy, oeste, western, sombrero, rancho",
     "grupo": "vaquero-oeste"
+=======
+    "imagen_thumb": "images/disfraces/hombre/vaquero.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 19,
@@ -204,9 +276,13 @@
     "edad": "adulto",
     "genero": "hombre",
     "imagen": "images/disfraces/hombre/vikingo.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/hombre/vikingo.png",
     "palabras_clave": "vikingo, viking, nordico, casco cuernos, guerrero, epoca",
     "grupo": "vikingo"
+=======
+    "imagen_thumb": "images/disfraces/hombre/vikingo.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 20,
@@ -215,9 +291,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/astronauta.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/astronauta.png",
     "palabras_clave": "astronauta, espacio, nasa, cosmonauta, profesion",
     "grupo": "astronauta"
+=======
+    "imagen_thumb": "images/disfraces/mujer/astronauta.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 21,
@@ -226,9 +306,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/bruja.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/bruja.png",
     "palabras_clave": "bruja, hechicera, halloween, magia, sombrero puntiagudo, escoba",
     "grupo": "bruja"
+=======
+    "imagen_thumb": "images/disfraces/mujer/bruja.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 22,
@@ -237,9 +321,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/catrina.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/catrina.png",
     "palabras_clave": "catrina, dia de muertos, mexico, calavera, mexicano, halloween mexicano",
     "grupo": "catrina"
+=======
+    "imagen_thumb": "images/disfraces/mujer/catrina.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 23,
@@ -248,9 +336,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/chola.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/chola.png",
     "palabras_clave": "chola cuencana, chola, cuenca, folclorico, ecuador, pollera, traje tipico",
     "grupo": "chola-cuencana"
+=======
+    "imagen_thumb": "images/disfraces/mujer/chola.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 24,
@@ -259,9 +351,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/cientifica.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/cientifica.png",
     "palabras_clave": "cientifica, laboratorio, quimica, profesion, bata blanca",
     "grupo": "cientifico"
+=======
+    "imagen_thumb": "images/disfraces/mujer/cientifica.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 25,
@@ -270,9 +366,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/diabla.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/diabla.png",
     "palabras_clave": "diabla, diablo, halloween, cuernos, tridente, rojo",
     "grupo": "diablo"
+=======
+    "imagen_thumb": "images/disfraces/mujer/diabla.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 26,
@@ -281,9 +381,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/egipcia.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/egipcia.png",
     "palabras_clave": "egipcia, egipto, faraon, cleopatra, epoca, antiguo egipto",
     "grupo": "egipcio"
+=======
+    "imagen_thumb": "images/disfraces/mujer/egipcia.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 27,
@@ -292,9 +396,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/esqueleto.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/esqueleto.png",
     "palabras_clave": "esqueleto, huesos, halloween, calavera, dia de muertos",
     "grupo": "esqueleto"
+=======
+    "imagen_thumb": "images/disfraces/mujer/esqueleto.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 28,
@@ -303,9 +411,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/fantasma.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/fantasma.png",
     "palabras_clave": "fantasma, ghost, halloween, sabana, espiritu",
     "grupo": "fantasma"
+=======
+    "imagen_thumb": "images/disfraces/mujer/fantasma.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 29,
@@ -314,9 +426,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/flamenca.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/flamenca.png",
     "palabras_clave": "flamenca, espana, espanol, lunares, baile, folclorico",
     "grupo": "flamenca"
+=======
+    "imagen_thumb": "images/disfraces/mujer/flamenca.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 30,
@@ -325,9 +441,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/granjera.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/granjera.png",
     "palabras_clave": "granjera, campo, agricultora, profesion, overol",
     "grupo": "granjero"
+=======
+    "imagen_thumb": "images/disfraces/mujer/granjera.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 31,
@@ -336,9 +456,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/griega.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/griega.png",
     "palabras_clave": "griega, grecia, diosa griega, toga, epoca, antigua grecia",
     "grupo": "griego"
+=======
+    "imagen_thumb": "images/disfraces/mujer/griega.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 32,
@@ -347,9 +471,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/hawaiana.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/hawaiana.png",
     "palabras_clave": "hawaiana, hawaii, tropical, playa, collar flores, verano",
     "grupo": "hawaiano"
+=======
+    "imagen_thumb": "images/disfraces/mujer/hawaiana.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 33,
@@ -358,9 +486,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/maria.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/maria.png",
     "palabras_clave": "virgen maria, maria, biblico, nacimiento, pesebre, pase del nino",
     "grupo": "virgen-maria"
+=======
+    "imagen_thumb": "images/disfraces/mujer/maria.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 34,
@@ -369,9 +501,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/medica.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/medica.png",
     "palabras_clave": "doctora, medica, medico, profesion, bata blanca, estetoscopio",
     "grupo": "doctor"
+=======
+    "imagen_thumb": "images/disfraces/mujer/medica.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 35,
@@ -380,9 +516,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/medieval.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/medieval.png",
     "palabras_clave": "dama medieval, medieval, princesa medieval, epoca, edad media",
     "grupo": "medieval-dama"
+=======
+    "imagen_thumb": "images/disfraces/mujer/medieval.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 36,
@@ -391,9 +531,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/momia.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/momia.png",
     "palabras_clave": "momia, egipcia, halloween, vendas, egipto antiguo",
     "grupo": "momia"
+=======
+    "imagen_thumb": "images/disfraces/mujer/momia.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 37,
@@ -402,9 +546,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/pastora.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/pastora.png",
     "palabras_clave": "pastora, pastor de belen, biblico, nacimiento, pesebre, pase del nino",
     "grupo": "pastor-belen"
+=======
+    "imagen_thumb": "images/disfraces/mujer/pastora.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 38,
@@ -413,9 +561,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/pirata.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/pirata.png",
     "palabras_clave": "pirata, corsario, tesoro, tricornio, aventura, mar",
     "grupo": "pirata-clasico"
+=======
+    "imagen_thumb": "images/disfraces/mujer/pirata.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 39,
@@ -424,9 +576,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/policia.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/policia.png",
     "palabras_clave": "policia, oficial, uniforme, profesion, ley",
     "grupo": "policia"
+=======
+    "imagen_thumb": "images/disfraces/mujer/policia.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 40,
@@ -435,9 +591,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/saragurena.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/saragurena.png",
     "palabras_clave": "saragurena, saraguro, indigena, ecuador, folclorico, tradicional",
     "grupo": "saraguro"
+=======
+    "imagen_thumb": "images/disfraces/mujer/saragurena.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 41,
@@ -446,9 +606,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/vampira.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/vampira.png",
     "palabras_clave": "vampira, dracula, halloween, capa, colmillos, gotico",
     "grupo": "vampiro-clasico"
+=======
+    "imagen_thumb": "images/disfraces/mujer/vampira.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 42,
@@ -457,9 +621,13 @@
     "edad": "adulto",
     "genero": "mujer",
     "imagen": "images/disfraces/mujer/zombie.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/mujer/zombie.png",
     "palabras_clave": "zombie, zombi, halloween, muerto viviente, terror",
     "grupo": "zombie"
+=======
+    "imagen_thumb": "images/disfraces/mujer/zombie.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 43,
@@ -468,9 +636,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/abeja.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/abeja.png",
     "palabras_clave": "abeja, insecto, animal, disfraz infantil, colmena",
     "grupo": "abeja"
+=======
+    "imagen_thumb": "images/disfraces/nina/abeja.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 44,
@@ -479,9 +651,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/arbol-navidad.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/arbol-navidad.png",
     "palabras_clave": "arbol de navidad, navidad, pino navideno, disfraz infantil",
     "grupo": "arbol-navidad"
+=======
+    "imagen_thumb": "images/disfraces/nina/arbol-navidad.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 45,
@@ -490,9 +666,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/calabaza.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/calabaza.png",
     "palabras_clave": "calabaza, jack o lantern, halloween, disfraz infantil",
     "grupo": "calabaza"
+=======
+    "imagen_thumb": "images/disfraces/nina/calabaza.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 46,
@@ -501,9 +681,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/chola.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/chola.png",
     "palabras_clave": "chola cuencana, chola, cuenca, folclorico, ecuador, disfraz infantil, pase del nino",
     "grupo": "chola-cuencana"
+=======
+    "imagen_thumb": "images/disfraces/nina/chola.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 47,
@@ -512,9 +696,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/duende-navidad.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/duende-navidad.png",
     "palabras_clave": "duende navideno, duende, navidad, elfo, disfraz infantil",
     "grupo": "duende-navidad"
+=======
+    "imagen_thumb": "images/disfraces/nina/duende-navidad.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 48,
@@ -523,9 +711,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/mariposa.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/mariposa.png",
     "palabras_clave": "mariposa, insecto, alas, animal, disfraz infantil",
     "grupo": "mariposa"
+=======
+    "imagen_thumb": "images/disfraces/nina/mariposa.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 49,
@@ -534,9 +726,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/pastor.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/pastor.png",
     "palabras_clave": "pastora, pastor de belen, biblico, nacimiento, pesebre, pase del nino, disfraz infantil",
     "grupo": "pastor-belen"
+=======
+    "imagen_thumb": "images/disfraces/nina/pastor.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 50,
@@ -545,9 +741,13 @@
     "edad": "nino",
     "genero": "nina",
     "imagen": "images/disfraces/nina/unicornio.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nina/unicornio.png",
     "palabras_clave": "unicornio, fantasia, animal magico, disfraz infantil",
     "grupo": "unicornio"
+=======
+    "imagen_thumb": "images/disfraces/nina/unicornio.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 51,
@@ -556,9 +756,13 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/angel.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/angel.png",
     "palabras_clave": "angel, biblico, nacimiento, pesebre, pase del nino, alas, disfraz infantil",
     "grupo": "angel"
+=======
+    "imagen_thumb": "images/disfraces/nino/angel.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 52,
@@ -567,9 +771,13 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/conejo.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/conejo.png",
     "palabras_clave": "conejo, orejas largas, animal, disfraz infantil, pascua",
     "grupo": "conejo"
+=======
+    "imagen_thumb": "images/disfraces/nino/conejo.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 53,
@@ -578,9 +786,13 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/duende-travieso.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/duende-travieso.png",
     "palabras_clave": "duende travieso, duende, gnomo, bosque, disfraz infantil",
     "grupo": "duende-travieso"
+=======
+    "imagen_thumb": "images/disfraces/nino/duende-travieso.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 54,
@@ -589,9 +801,13 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/estrella-navidad.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/estrella-navidad.png",
     "palabras_clave": "estrella de navidad, estrella, navidad, disfraz infantil",
     "grupo": "estrella-navidad"
+=======
+    "imagen_thumb": "images/disfraces/nino/estrella-navidad.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 55,
@@ -600,9 +816,13 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/explorador.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/explorador.png",
     "palabras_clave": "explorador, safari, selva, aventurero, disfraz infantil",
     "grupo": "explorador-selva"
+=======
+    "imagen_thumb": "images/disfraces/nino/explorador.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 56,
@@ -611,9 +831,13 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/leon.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/leon.png",
     "palabras_clave": "leon, melena, animal, rey de la selva, disfraz infantil",
     "grupo": "leon"
+=======
+    "imagen_thumb": "images/disfraces/nino/leon.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 57,
@@ -622,9 +846,13 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/montubio.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/montubio.png",
     "palabras_clave": "montubio, costa, ecuador, folclorico, tradicional, disfraz infantil",
     "grupo": "montubio"
+=======
+    "imagen_thumb": "images/disfraces/nino/montubio.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   },
   {
     "id": 58,
@@ -633,8 +861,12 @@
     "edad": "nino",
     "genero": "nino",
     "imagen": "images/disfraces/nino/robot.png",
+<<<<<<< HEAD
     "imagen_thumb": "images/disfraces/nino/robot.png",
     "palabras_clave": "robot, mecanico, futurista, disfraz infantil",
     "grupo": "robot-ayudante"
+=======
+    "imagen_thumb": "images/disfraces/nino/robot.png"
+>>>>>>> cb5db4768cf1912476aaf88f488c481a888e20f3
   }
 ]
